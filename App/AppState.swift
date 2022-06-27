@@ -14,7 +14,7 @@ protocol AppState {
     var alarmSnoozeUntil: Date? { get set }
     var appleCalendarExport: Bool { get set }
     var appleHealthExport: Bool { get set }
-    var bellmanAlarm: Bool { get set }
+    var bellmanAlarm: Bool { get set } 
     var bellmanConnectionState: BellmanConnectionState { get set }
     var chartShowLines: Bool { get set }
     var chartZoomLevel: Int { get set }
