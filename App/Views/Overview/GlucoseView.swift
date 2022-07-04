@@ -106,8 +106,9 @@ struct GlucoseView: View {
     }
 
     // MARK: Private
+    // Pauly: Why is this privvate? I'm just learning so don't know.
 
-    private func isAlarm(glucose: Glucose) -> Bool {
+     private func isAlarm(glucose: Glucose) -> Bool {
         if let glucoseValue = glucose.glucoseValue, glucoseValue < store.state.alarmLow || glucoseValue > store.state.alarmHigh {
             return true
         }
@@ -115,7 +116,7 @@ struct GlucoseView: View {
         return false
     }
 
-    private func getGlucoseColor(glucose: Glucose) -> Color {
+     private func getGlucoseColor(glucose: Glucose) -> Color {
         if isAlarm(glucose: glucose) {
             return Color.ui.red
         }

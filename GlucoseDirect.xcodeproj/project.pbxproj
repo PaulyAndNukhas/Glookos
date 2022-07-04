@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A74894FE286A69B70058F791 /* AddInsulinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74894FD286A69B70058F791 /* AddInsulinView.swift */; };
+		A79C2C80286FC0E000728D51 /* InsulinDeliveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C2C7F286FC0E000728D51 /* InsulinDeliveryView.swift */; };
+		A79C2C832870E2AC00728D51 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79C2C822870E2AC00728D51 /* Extensions.swift */; };
 		E2016FD9285BA80300079195 /* SensorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2016FD5285BA7C600079195 /* SensorWidget.swift */; };
 		E2016FDA285BA81700079195 /* GlucoseWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2016FD7285BA7EE00079195 /* GlucoseWidget.swift */; };
 		E2016FDC285BA82600079195 /* TransmitterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2016FDB285BA82600079195 /* TransmitterWidget.swift */; };
@@ -185,6 +187,8 @@
 		1938BB6F2752F8D10047059C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1938BB702752F8D20047059C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A74894FD286A69B70058F791 /* AddInsulinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInsulinView.swift; sourceTree = "<group>"; };
+		A79C2C7F286FC0E000728D51 /* InsulinDeliveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinDeliveryView.swift; sourceTree = "<group>"; };
+		A79C2C822870E2AC00728D51 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E2016FD5285BA7C600079195 /* SensorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorWidget.swift; sourceTree = "<group>"; };
 		E2016FD7285BA7EE00079195 /* GlucoseWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlucoseWidget.swift; sourceTree = "<group>"; };
 		E2016FDB285BA82600079195 /* TransmitterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmitterWidget.swift; sourceTree = "<group>"; };
@@ -364,9 +368,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A79C2C812870E29800728D51 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A79C2C822870E2AC00728D51 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E20B8531266F4A9800AA4224 = {
 			isa = PBXGroup;
 			children = (
+				A79C2C812870E29800728D51 /* Helpers */,
 				E247D8E426B7D70A00BDAF89 /* GlucoseDirect.xcconfig */,
 				E20B853C266F4A9800AA4224 /* App */,
 				E24474432859CA9600F8891C /* AppWidgets */,
@@ -550,6 +563,7 @@
 				E29ED230268C754F00CBD3F1 /* GlucoseView.swift */,
 				E223F866267A4D9800EC9BCA /* SensorView.swift */,
 				E28728A926DE499200269F47 /* SnoozeView.swift */,
+				A79C2C7F286FC0E000728D51 /* InsulinDeliveryView.swift */,
 			);
 			path = Overview;
 			sourceTree = "<group>";
@@ -970,6 +984,8 @@
 				E2FCAC1D270741BC00FE1CBF /* Sensor.swift in Sources */,
 				E2D34BCA274D6C1300151895 /* SettingsView.swift in Sources */,
 				E2D34BC8274D6BCB00151895 /* ListView.swift in Sources */,
+				A79C2C80286FC0E000728D51 /* InsulinDeliveryView.swift in Sources */,
+				A79C2C832870E2AC00728D51 /* Extensions.swift in Sources */,
 				E2FCAC2F270741D200FE1CBF /* Data.swift in Sources */,
 				E2FCAC712707438A00FE1CBF /* AppAction.swift in Sources */,
 				E2FCAC512707424800FE1CBF /* Nightscout.swift in Sources */,
@@ -1232,7 +1248,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "${APP_VERSION}";
-				PRODUCT_BUNDLE_IDENTIFIER = gd.paul.diabeaties;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.5YBT3MFN84.libre-direct";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1261,7 +1277,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "${APP_VERSION}";
-				PRODUCT_BUNDLE_IDENTIFIER = gd.paul.diabeaties;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.5YBT3MFN84.libre-direct";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
